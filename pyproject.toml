@@ -1,0 +1,22 @@
+[tool.uv]
+package = true  # 明示（既定は true だが明文化しておくと安心なので）
+link-mode = "copy"
+
+[project]
+name = "rapiro-rag"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "langchain>=1.0.2",
+    "langchain-chroma>=1.0.0",
+    "langchain-community>=0.4",
+    "langchain-huggingface>=1.0.0",
+    "selenium>=4.37.0",
+    "sentence-transformers>=5.1.2",
+    "unstructured>=0.18.15",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
