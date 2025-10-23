@@ -68,9 +68,6 @@
 
 ```bash
 uv sync
-# または
-uv add "langchain>=1.0" langchain-core langchain-community langchain-chroma \
-       chromadb sentence-transformers selenium
 ```
 
 ### 2️⃣ ドキュメント登録（インデクシング）
